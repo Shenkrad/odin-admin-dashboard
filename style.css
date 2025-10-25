@@ -80,6 +80,8 @@ button:hover {
     grid-template-rows: 50px 1fr;
     align-items: center;
     column-gap: 50px;
+    box-shadow: 0 3px 3px #36363628;
+    z-index: 1;
 }
 
 #search-icon {
@@ -167,6 +169,6 @@ button:hover {
 /* main content*/
 
 .main-content {
-    background-color: yellowgreen;
+    background-color: #e2e8f0;
 }
 
