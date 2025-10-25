@@ -68,15 +68,52 @@ body {
 /* header */
 
 .header {
+    padding: 10px 20px 0 20px;
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 50px 1fr;
+    align-items: center;
 }
 
 #search-icon {
-    width: 20px;
+    width: 25px;
+}
+
+.searchbar {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 25px 1fr;
+    column-gap: 15px;
+}
+
+#input-search {
+   background-color: #e2e8f0;
+   border: 0;
+   border-radius: 20px;
+   height: 30px;
+   padding: 10px;
 }
 
 #notifications-icon {
-    width: 20px;
+    width: 25px;
+}
+
+#profile-picture-small {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.user-info-small {
+    display: grid;
+    align-items: center;
+    justify-content:end;
+    column-gap: 25px;
+    grid-template-columns: 25px 50px 150px;
+}
+
+.user-info-small p {
+    display: inline;
 }
 
 /* main content*/
