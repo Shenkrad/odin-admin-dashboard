@@ -8,6 +8,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    box-sizing: border-box;
 }
 
 .container {
@@ -15,6 +16,10 @@ body {
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 5fr;
     height: 100vh;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 /* Sidebar */
@@ -74,6 +79,7 @@ body {
     grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 50px 1fr;
     align-items: center;
+    column-gap: 50px;
 }
 
 #search-icon {
@@ -100,7 +106,12 @@ body {
 }
 
 #profile-picture-small {
-    width: 50px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+#profile-picture-big {
+    width: 55px;
     border-radius: 50%;
 }
 
@@ -109,11 +120,48 @@ body {
     align-items: center;
     justify-content:end;
     column-gap: 25px;
-    grid-template-columns: 25px 50px 150px;
+    grid-template-columns: 25px 50px auto;
+}
+
+.user-info-big {
+    display: grid;
+    grid-template-columns: 55px 1fr;
+    column-gap: 10px;
+    align-items: center;
+}
+
+#username-box {
+    font-weight: 600;
+}
+
+#small-upper-text {
+    font-size: .8em;
+    margin-bottom: 0;
+}
+
+#username-big{
+    margin-top: 7px;
 }
 
 .user-info-small p {
     display: inline;
+}
+
+.header-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content:end;
+    column-gap: 30px;
+}
+
+.header-button {
+    background-color: #1992d4;
+    border: 0;
+    border-radius: 20px;
+    width: 90px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 600;
 }
 
 /* main content*/
