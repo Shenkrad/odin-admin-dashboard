@@ -123,7 +123,7 @@ h4 {
     width: 25px;
 }
 
-#profile-picture-small {
+.profile-picture-small {
     width: 40px;
     border-radius: 50%;
 }
@@ -190,7 +190,8 @@ h4 {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    gap: 40px;
+    row-gap: 10px;
+    column-gap: 40px;
 }
 
 .cards-content {
@@ -254,15 +255,13 @@ h4 {
     grid-row: 1 / 4;
 }
 
-.announcements-box {
+.announcements-box, .trending-box {
   background-color: white;
   border-radius: 10px;
   box-shadow: 3px 3px 3px #36363628;
   padding: 0 25px 10px 25px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;  
+  flex-direction: column;  
 }
 
 .announcement {
@@ -287,7 +286,7 @@ h4 {
     grid-row: 4 / 8
 }
 
-.annoucement-text {
+.annoucement-text, .trending-project-name {
     margin: 0;
     font-size: .8em;
     color: grey;
@@ -295,4 +294,26 @@ h4 {
     line-clamp: 3;
     
     overflow: hidden;
+}
+
+/* trending */
+
+.trending {
+    grid-column: 6 / 8;
+}
+
+.trending-username {
+    font-size: .8em;
+}
+
+.trending-row {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.trending-box {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
